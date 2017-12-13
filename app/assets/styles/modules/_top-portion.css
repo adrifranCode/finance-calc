@@ -1,0 +1,111 @@
+.top {
+    height: 40vh;
+    background-color:$mainNeutralpink;
+    background: linear-gradient(to right, rgba(192,108,132,1) 0%,rgba(108,91,123,1) 100%);
+    background-position: center;
+    position: relative;
+}
+
+.budget {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.budget__title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+    
+    
+    @mixin atLarge{
+		font-size:1.5rem;
+    }
+}
+
+.budget__value {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    color:#ffff75;
+    text-shadow: 2px 2px 5px $mainNeutralblue;
+    
+    @mixin atSmallHeight{
+		margin-bottom: 0px;
+    }
+    
+    @mixin atLarge{
+		font-size:3.5rem;
+    }
+}
+
+.budget__income,
+.budget__expenses {
+    padding: 12px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-left:30px;
+    margin-right:30px;
+    
+    @mixin atSmall{
+		margin-left:0;
+		margin-right:0;
+    }
+    
+    @mixin atLarge{
+		font-size:2rem;
+		margin-left:-40px;
+		margin-right:-40px;
+    }
+    
+}
+
+.budget__income {
+    margin-bottom: 10px;
+    background-color: $mainStandoutblue;
+    box-shadow: 9px 7px 22px 0px rgba(108,91,123,1);
+}
+
+.budget__expenses {
+    background-color: $mainStandoutpink;
+    box-shadow: 9px 7px 22px 0px rgba(108,91,123,1);
+}
+
+.budget__income--text,
+.budget__expenses--text {
+    float: left;
+    font-size: 13px;
+    color: #444;
+    margin-top: 2px;
+    
+    @mixin atLarge{
+		font-size:2rem;
+    }
+}
+
+.budget__income--value,
+.budget__expenses--value {
+    letter-spacing: 1px;
+    float: left;
+}
+
+.budget__income--percentage,
+.budget__expenses--percentage {
+    float: left;
+    width: 34px;
+    font-size: 11px;
+    padding: 3px 0;
+    margin-left: 10px;
+}
+
+.budget__expenses--percentage {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 3px;
+}

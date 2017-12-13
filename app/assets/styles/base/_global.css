@@ -1,18 +1,21 @@
-body {
-	font-family: 'Roboto', sans-serif;
-	color:#333;
-}
-
-img{
-	max-width:100%;
-	height: auto;
-	
-}
-
-a{
-	color: $mainPurple;
-}
-
 * {
-	box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
