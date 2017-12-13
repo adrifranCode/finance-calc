@@ -21,10 +21,6 @@
     margin-bottom: 10px;
     font-weight: 300;
     
-    
-    @mixin atLarge{
-		font-size:1.5rem;
-    }
 }
 
 .budget__value {
@@ -34,15 +30,12 @@
     margin-bottom: 25px;
     letter-spacing: 2px;
     color:#ffff75;
-    text-shadow: 2px 2px 5px $mainNeutralblue;
+    text-shadow: 3px 5px 15px $mainNeutralblue;
     
     @mixin atSmallHeight{
 		margin-bottom: 0px;
     }
     
-    @mixin atLarge{
-		font-size:3.5rem;
-    }
 }
 
 .budget__income,
@@ -59,7 +52,6 @@
     }
     
     @mixin atLarge{
-		font-size:2rem;
 		margin-left:-40px;
 		margin-right:-40px;
     }
@@ -81,12 +73,9 @@
 .budget__expenses--text {
     float: left;
     font-size: 13px;
-    color: #444;
+    color: white;
     margin-top: 2px;
     
-    @mixin atLarge{
-		font-size:2rem;
-    }
 }
 
 .budget__income--value,
@@ -103,6 +92,10 @@
     padding: 3px 0;
     margin-left: 10px;
 }
+
+.right { float: right; }
+.red { color: #FF5049 !important; }
+.red-focus:focus { border: 1px solid #FF5049 !important; }
 
 .budget__expenses--percentage {
     background-color: rgba(255, 255, 255, 0.2);

@@ -3894,14 +3894,8 @@ body {
     text-align: center;
     margin-bottom: 10px;
     font-weight: 300;
+    
 }
-
-@media (min-width:989px){
-
-.budget__title {
-		font-size:1.5rem
-}
-	}
 
 .budget__value {
     font-weight: 300;
@@ -3910,20 +3904,15 @@ body {
     margin-bottom: 25px;
     letter-spacing: 2px;
     color:#ffff75;
-    text-shadow: 2px 2px 5px #6C5B7B;
+    text-shadow: 3px 5px 15px #6C5B7B;
+    
 }
 
 @media (max-height:570px){
 
 .budget__value {
 		margin-bottom: 0px
-}
-	}
-
-@media (min-width:989px){
-
-.budget__value {
-		font-size:3.5rem
+    
 }
 	}
 
@@ -3951,7 +3940,6 @@ body {
 
 .budget__income,
 .budget__expenses {
-		font-size:2rem;
 		margin-left:-40px;
 		margin-right:-40px
     
@@ -3975,17 +3963,10 @@ body {
 .budget__expenses--text {
     float: left;
     font-size: 13px;
-    color: #444;
+    color: white;
     margin-top: 2px;
+    
 }
-
-@media (min-width:989px){
-
-.budget__income--text,
-.budget__expenses--text {
-		font-size:2rem
-}
-	}
 
 .budget__income--value,
 .budget__expenses--value {
@@ -4001,6 +3982,12 @@ body {
     padding: 3px 0;
     margin-left: 10px;
 }
+
+.right { float: right; }
+
+.red { color: #FF5049 !important; }
+
+.red-focus:focus { border: 1px solid #FF5049 !important; }
 
 .budget__expenses--percentage {
     background-color: rgba(255, 255, 255, 0.2);
