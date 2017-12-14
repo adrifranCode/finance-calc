@@ -5,4 +5,4 @@ var UIController = (function(){
 
 
 
-export default uiController;
+export default UIController;

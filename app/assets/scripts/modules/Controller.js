@@ -1,6 +1,10 @@
-var controller = (function(budgetCtrl, uiCtrl){
+var controller = (function(budgetCtrl, UICtrl){
 	
-})(budgetController,UIController);
+	document.querySelector('.add__btn').addEventListener('click', function(){
+		console.log("what's up?");
+	});
+	
+})();
 
 
 
