@@ -65,6 +65,14 @@
 
 .add__btn:active { transform: translateY(2px); }
 
+input[type="text"]:focus{
+	border: 1px solid $mainStandoutblue;
+}
+
+input[type="number"]:focus{
+	border: 1px solid $mainStandoutblue;
+}
+
 .add__type:focus,
 .add__description:focus,
 .add__value:focus {

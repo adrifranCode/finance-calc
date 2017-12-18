@@ -4557,9 +4557,9 @@ html, body {
 
 .right { float: right; }
 
-.red { color: #FF5049 !important; }
+.red { color: #F67280 !important; }
 
-.red-focus:focus { border: 1px solid #FF5049 !important; }
+.red-focus:focus { border: 1px solid #F67280 !important; }
 
 .budget__expenses--percentage {
     background-color: rgba(255, 255, 255, 0.2);
@@ -4640,6 +4640,14 @@ html, body {
 }
 
 .add__btn:active { -webkit-transform: translateY(2px); transform: translateY(2px); }
+
+input[type="text"]:focus{
+	border: 1px solid #355C7D;
+}
+
+input[type="number"]:focus{
+	border: 1px solid #355C7D;
+}
 
 .add__type:focus,
 .add__description:focus,

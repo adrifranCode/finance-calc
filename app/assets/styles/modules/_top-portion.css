@@ -190,8 +190,8 @@
 }
 
 .right { float: right; }
-.red { color: #FF5049 !important; }
-.red-focus:focus { border: 1px solid #FF5049 !important; }
+.red { color: $mainStandoutpink !important; }
+.red-focus:focus { border: 1px solid $mainStandoutpink !important; }
 
 .budget__expenses--percentage {
     background-color: rgba(255, 255, 255, 0.2);
