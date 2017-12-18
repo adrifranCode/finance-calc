@@ -4369,7 +4369,7 @@ html, body {
 }
 	}
 
-@media (max-height:700px){
+@media (max-height:820px){
 
 .top {
 		height: 50vh;
@@ -4446,7 +4446,7 @@ html, body {
 
 .budget__value {
     font-weight: 300;
-    font-size: 46px;
+    font-size: 3.5rem;
     text-align: center;
     margin-bottom: 25px;
     letter-spacing: 2px;
@@ -4455,10 +4455,18 @@ html, body {
     
 }
 
-@media (max-height:700px){
+@media (max-height:820px){
 
 .budget__value {
 		margin-bottom: 0px
+    
+}
+	}
+
+@media (min-width:530px){
+
+.budget__value {
+		font-size: 46px
     
 }
 	}
@@ -4645,7 +4653,29 @@ html, body {
 .container {
     width: 1000px; 
 	margin: 60px auto;
+	margin-left: -40px;
 }
+
+@media (min-width:369px){
+
+.container {
+		margin-left: -30px
+}
+	}
+
+@media (min-width:400px){
+
+.container {
+		margin-left: -15px
+}
+	}
+
+@media (min-width:640px){
+
+.container {
+		margin-left: 0px
+}
+	}
 
 @media(min-width:770px){
 
@@ -4672,7 +4702,7 @@ html, body {
 .income {
 		text-align:left;
 		float: left;
-		width: 475px
+		width: 350px
 }
 	}
 
@@ -4694,7 +4724,7 @@ html, body {
 .expenses {
 		text-align:left;
 		float: left;
-		width: 475px
+		width: 355px
 }
 	}
 
@@ -4732,7 +4762,15 @@ h2 {
 .item {
     padding: 13px;
     border-bottom: 1px solid #e7e7e7;
+    margin-left: -10px;
 }
+
+@media (min-width:640px){
+
+.item {
+		margin-left: 0px
+}
+	}
 
 .item:first-child { border-top: 1px solid #e7e7e7; }
 
@@ -4744,41 +4782,109 @@ h2 {
 
 .item__value {
     float: left;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    
 }
 
 .item__percentage {
+    color: #F67280;
     float: left;
-    margin-left: 20px;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
+    margin-left: -239px;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
     font-size: 11px;
     background-color: #FFDAD9;
     padding: 3px;
     border-radius: 3px;
     width: 32px;
     text-align: center;
+    margin-top: 50px;
+    
 }
+
+@media (min-width:400px){
+
+.item__percentage {
+		margin-left: -115px
+    
+}
+	}
+
+@media (min-width:530px){
+
+.item__percentage {
+		margin-left:20px;
+		margin-top: 0px
+    
+}
+	}
 
 .income .item__value,
 .income .item__delete--btn {
-    color: #28B9B5;
+    color: #355C7D;
+    margin-left:-320px;
+    margin-top: 50px;
 }
 
-.expenses .item__value,
-.expenses .item__percentage,
-.expenses .item__delete--btn {
-    color: #FF5049;
+@media (min-width:400px){
+
+.income .item__value,
+.income .item__delete--btn {
+		margin-left: -220px;
+		    margin-top: 50px
 }
+	}
+
+@media (min-width:530px){
+
+.income .item__value,
+.income .item__delete--btn {
+		margin-left:0;
+		margin-top: 0px
+}
+	}
+
+.expenses .item__value,
+.expenses .item__delete--btn {
+    color: #F67280;
+    margin-left:-320px;
+    margin-top: 50px;
+}
+
+@media (min-width:400px){
+
+.expenses .item__value,
+.expenses .item__delete--btn {
+		margin-left: -220px;
+		margin-top: 50px
+}
+	}
+
+@media (min-width:530px){
+
+.expenses .item__value,
+.expenses .item__delete--btn {
+		margin-left:46px;
+		margin-top: 0px
+}
+	}
 
 .item__delete {
     float: left;
+    
 }
+
+@media(min-width:770px){
+
+.expenses .item__delete{
+		margin-top: -30px
+}
+	}
 
 .item__delete--btn {
     font-size: 22px;
@@ -4797,9 +4903,9 @@ h2 {
 
 .item:hover .item__delete--btn { display: block; }
 
-.item:hover .item__value { -webkit-transform: translateX(-20px); transform: translateX(-20px); }
+.item:hover .item__value { -webkit-transform: translateX(-20px); transform: translateX(-20px); opacity:0;}
 
-.item:hover .item__percentage { -webkit-transform: translateX(-20px); transform: translateX(-20px); }
+.item:hover .item__percentage { -webkit-transform: translateX(-20px); transform: translateX(-20px); opacity:0; }
 
 .unpaid {
     background-color: #FFDAD9 !important;
